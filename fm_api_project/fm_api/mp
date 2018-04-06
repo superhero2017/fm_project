@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$1" == "runserver" ] && [ $# -lt 2 ]; then
+  arg="runserver 0.0.0.0:8010"
+else
+  # echo "$@"
+  arg="$@"
+fi
+
+env=`printenv DJANGO`
+
+if [ "$env" = "" ]; then
+  echo "You must sent the DJANGO envirvonment variable"
+  exit -1
+fi
+
+# TODO: instead of using this script, look into setting the env variable
+# DJANGO_SETTINGS_MODULE in the virtualenv's postactivate script
+cmd="./manage.py $arg --settings=config.settings.$env"
+echo $cmd
+exec $cmd

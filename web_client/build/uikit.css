@@ -1,0 +1,41 @@
+
+body {
+  color: #414141;
+}
+
+a {
+  color: #4caf50;
+}
+
+.btn-primary,
+.btn-primary:hover
+{
+  background-color: rgba(255, 112, 67, 1);
+  border: none;
+  transition: none;
+}
+
+.btn-primary.disabled
+{
+  background-color: rgba(255, 112, 67, .8);
+}
+
+.btn-fb,
+.btn-fb:hover
+{
+  background-color: #4568b2;
+  color: white;
+}
+
+.txt-secondary
+{
+  color: #6c6c6c;
+}
+.txt-primary
+{
+  color: #414141;
+}
+.txt
+{
+  font-family: "karlaregular";
+}

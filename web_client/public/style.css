@@ -1,0 +1,308 @@
+/*
+Globals (i.e. doesn't support this so i cant use it)
+- menu height: 65px
+- green golor: #18BC9C;
+*/
+
+
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "sonsie_oneregular";
+  src: url('./fonts/sonsieone/sonsieone-regular-webfont.eot');
+  src:
+    local("./fonts/sonsieone/sonsie_oneregular"),
+    url('./fonts/sonsieone/sonsieone-regular-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('./fonts/sonsieone/sonsieone-regular-webfont.woff2')
+    format('woff2'),
+    url('./fonts/sonsieone/sonsieone-regular-webfont.woff') format('woff'),
+    url('./fonts/sonsieone/sonsieone-regular-webfont.svg#sonsie_oneregular')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "karlaregular";
+  src: url('./fonts/karla/karla-regular-webfont.eot');
+  src:
+    url('./fonts/karla/karla-regular-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('./fonts/karla/karla-regular-webfont.woff2')
+    format('woff2'),
+    url('./fonts/karla/karla-regular-webfont.woff') format('woff'),
+    url('./fonts/karla/karla-regular-webfont.svg#karlaregular')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******************************************************/
+
+
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; // This is where the magic happens
+}
+
+.logo {
+  pointer-events: none; // Needed so link around logo can be followed
+}
+
+.menuBar {
+  position: fixed;
+}
+
+.top-menu {
+  margin-bottom: 0!important;
+}
+
+.mobile-menu {
+  margin-top: 0!important;
+}
+
+.menu-container {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: fixed;
+  z-index: 101;
+  /*margin-top: 0;
+  margin-bottom: 0;*/
+  margin: 0;
+  width: 100%;
+}
+
+.menu-vertical {
+  height: 65px!important;
+}
+
+.blue-bg {
+  background-color: #233140!important;
+  color: white!important;
+}
+
+.green-bg {
+  background-color: #18BC9C!important;
+  color: white!important;
+}
+
+.no-border-radius {
+  border-radius: 0!important;
+}
+
+.mainContainer {
+  margin-top: 7em;
+  margin-bottom: 2em;
+}
+
+.main-content {
+  margin-top: 65px; /* this is the issue with the masthead thing */
+  margin-bottom: 20px;
+  display: block;
+  flex: 1;
+  position: relative;
+}
+
+.login-bg {
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  /*display: block;
+  height: 100%;
+  width: 100%;*/
+  background-color: #4caf50;
+  /*color: white;*/
+  font-family: "proxima-nova",helvetica!important;
+  text-align: center;
+  overflow-y: scroll; /* Prevents the div from getting cut off at the bottom */
+}
+
+.login-form {
+  /*width: 500px;
+  margin-left: -250px;*/
+  width:450px;
+  height:550px;
+  margin:0 auto;
+  /*background:#f7f7f7;*/
+  position:absolute;
+  left:50%;
+  top:35%;
+  margin-left:-225px;
+  margin-top:-225px;
+}
+
+.login-form-mobile {
+  /*width: 500px;
+  margin-left: -250px;*/
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  /*background:#f7f7f7;*/
+  position:absolute;
+  left:50%;
+  /*top:30px;*/
+  margin-left:-45%;
+  margin-top:30px;
+  margin-bottom: 30px;
+  display: block;
+  flex: 1;
+
+}
+
+.login-title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: black;
+}
+
+
+
+.ui.segment.footer {
+  background-color: #2C3E50;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-bottom: 0px;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.ui.segment.subFooter {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #233140;
+  margin-top: 0px;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-page {
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+
+.menu-bar-wrapper {
+  display: block;
+
+}
+
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /*padding: 0 0 100px;
+  position: relative;
+  box-sizing: border-box;*/
+}
+
+.footer-wrapper {
+  /*box-sizing: border-box;
+  overflow: hidden;*/
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  /*bottom: 0;*/
+}
+
+.copyright {
+  height: 30px;
+  /*display: inline;*/
+  padding-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.copyright-wrapper {
+  display: table;
+  height: 100%;
+}
+
+.copyright-wrapper-container {
+  position: absolute;
+  display: inline;
+
+  height: 100%;
+
+}
+
+.inverted a {
+  color: white;
+}
+
+.ui.button.fm-green {
+  background-color: #18BC9C;
+  color: white;
+}
+
+.dropdown-container {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+}
+
+/* Needed because semantic ui form overwrites styles of react phone input
+*/
+.ui .form input[type=tel]  {
+  padding-left: 44px;
+}
+
+/* Style for the horizontal divider */
+
+
+.hr-line {
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.25);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+.text-hr {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 15px 0px;
+}
+
+.text-hr::before,
+.text-hr::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.25);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.text-hr::before {
+	margin: 0px 16px 0px 0px;
+}
+
+.text-hr::after {
+	margin: 0px 0px 0px 16px;
+}

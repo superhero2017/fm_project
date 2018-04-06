@@ -1,0 +1,49 @@
+{
+  "name": "web_client",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://app.usefeed.me",
+  "devDependencies": {
+    "react-scripts": "^0.9.0",
+    "redux-devtools-extension": "^2.13.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "classnames": "^2.2.5",
+    "crypto": "0.0.3",
+    "dns": "^0.2.2",
+    "history": "^4.6.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonwebtoken": "^7.4.1",
+    "jws": "^3.1.4",
+    "jwt-simple": "^0.5.1",
+    "libphonenumber-js": "^0.4.27",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-facebook-login": "^3.6.2",
+    "react-phone-input": "^1.2.1",
+    "react-redux": "^5.0.5",
+    "react-redux-form": "^1.12.0",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-stripe-elements": "0.0.7",
+    "react-transition-group": "^1.2.1",
+    "reactstrap": "^4.8.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.10.2",
+    "redux-saga": "^0.14.8",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.5",
+    "stripe": "^4.23.1",
+    "validator": "^7.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
