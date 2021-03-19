@@ -15,7 +15,7 @@ django-extensions==1.7.9
 django-imagekit==4.0.1
 django-rest-auth==0.9.1
 django-rest-authemail==1.4.0
-djangorestframework==3.6.2
+djangorestframework==3.11.2
 djangorestframework-jwt==1.10.0
 httpie==1.0.3
 idna==2.5
